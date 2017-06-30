@@ -8,9 +8,11 @@
 <title>File Upload Demo</title>
 </head>
 <body>
+
+<h1> Welcome</h1>
     <center>
         <form method="post" action="FileUploadServlet" enctype="multipart/form-data">
-            Select file to upload:
+            Select file to upload :
             <input type="file" name="uploadFile" />
              <input type="file" name="uploadFile1" />
             <br/><br/><br/>
