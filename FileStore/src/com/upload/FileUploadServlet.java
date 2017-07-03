@@ -78,8 +78,10 @@ public class FileUploadServlet extends HttpServlet {
         if (!uploadDir.exists()) {
             uploadDir.mkdir();
         }
- 
+        String data=null;
         try {
+        	
+        	
             // parses the request's content to extract file data
             @SuppressWarnings("unchecked")
             List<FileItem> formItems = upload.parseRequest(request);
@@ -92,8 +94,10 @@ public class FileUploadServlet extends HttpServlet {
                         String fileName = new File(item.getName()).getName();
                         String filePath = uploadPath + File.separator + fileName;
                         File storeFile = new File(filePath);
- System.out.println("file path"+filePath+"file name="+fileName);
+
                         // saves the file on disk
+data=data+","+filePath;
+System.out.println("file path"+data);
                         item.write(storeFile);
                         request.setAttribute("message",
                             "Upload has been done successfully!");
@@ -104,6 +108,19 @@ public class FileUploadServlet extends HttpServlet {
             request.setAttribute("message",
                     "There was an error: " + ex.getMessage());
         }
+        
+        
+    
+        String[] parts = data.split(",");
+        for(String d:parts){
+        	System.out.println(d);
+        	
+        }
+        
+        
+        
+        
+     //   System.out.println(part2);
         // redirects client to message page
         getServletContext().getRequestDispatcher("/message.jsp").forward(
                 request, response);

@@ -13,9 +13,9 @@
     <center>
         <form method="post" action="FileUploadServlet" enctype="multipart/form-data">
             Select file to upload :
-            <input type="file" name="uploadFile" />
-             <input type="file" name="uploadFile1" />
-            <br/><br/><br/>
+            <input type="file" name="approvalletters" />
+             <input type="file" name="approvalletters1" />
+             
             <input type="submit" value="Upload" />
         </form>
     </center>

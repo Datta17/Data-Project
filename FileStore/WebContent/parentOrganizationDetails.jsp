@@ -59,7 +59,7 @@ function validate() {
    
     document.getElementById("WebSite").disabled=false;
     document.getElementById("TypeOfOrganization").disabled=false;
-    document.getElementById("RegistrationDate").disabled=false;
+    document.getElementById("datepicker").disabled=false;
        
     document.getElementById("NameOfTheChairman").disabled=false;
     
@@ -203,7 +203,7 @@ function validate() {
 												<td class="wfid_temp193335 tablecell" colspan="1"
 													rowspan="1" valign="middle" align="left"
 													style="height: 0px; width: 330px;">Name of the
-													Society/ Trust *</td>
+													Society/ Trust * </td>
 												<td class="wfid_temp193371 tablecell" colspan="1"
 													rowspan="1" valign="middle" align="left"><input
 													class="form-control wfid_temp193403 wfid_fullname textbox "
@@ -283,7 +283,7 @@ function validate() {
 											<tr class="wfid_temp193309 tablerow">
 												<td class="wfid_temp193335 tablecell" colspan="1"
 													rowspan="1" valign="middle" align="left"
-													style="height: 0px; width: 330px;">Pin *</td>
+													style="height: 0px; width: 330px;">Pin *  </td>
 												<td class="wfid_temp193371 tablecell" colspan="1"
 													rowspan="1" valign="middle" align="left"><input
 													class="form-control wfid_temp193403 wfid_fullname textbox "
@@ -387,7 +387,7 @@ function validate() {
 												<td class="wfid_temp193371 tablecell" colspan="1"
 													rowspan="1" valign="middle" align="left"><input
 													class="form-control wfid_temp193403 wfid_fullname textbox "
-													name="RegistrationDate" id="RegistrationDate"
+													name="RegistrationDate" id="datepicker"
 													disabled="true" placeholder="Registration date" type="text"></td>
 											</tr>
 
@@ -688,6 +688,20 @@ function validate() {
 				</div>
 
 			</div>
+			
+			
+			
+	
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 </body>
 
 
