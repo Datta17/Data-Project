@@ -12,6 +12,6 @@
 
 
 
-<a href="DownloadServlet">download the jsp file</a> 
+<a href="DownloadFileServlet">download the jsp file</a> 
 </body>
 </html>
