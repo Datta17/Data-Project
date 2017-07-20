@@ -5,13 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-
-
 </head>
 <body>
 
 
+<form action="controller?mode=downloadPDF" method="post" target="_Blank">
 
-<a href="DownloadFileServlet">download the jsp file</a> 
+<input type="text" id="permanentRegistrationNumber" name="permanentRegistrationNumber">
+<input type="submit" value="Download Degree Certificate">
+
+
+</form>
 </body>
 </html>
